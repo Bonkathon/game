@@ -1,9 +1,9 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MovementMotor))]
-public class MonsterStateController : MonoBehaviour
+public class TamagochiStateController : MonoBehaviour
 {
-    public MovementMotor motor;
+    private MovementMotor motor;
     public MonsterStateMachine stateMachine;
 
     void Awake()
@@ -33,6 +33,6 @@ public class MonsterStateController : MonoBehaviour
 
     private void HandleStateChanged(IMonsterState newState)
     {
-        Debug.Log($"Novo estado: {newState.GetType().Name}");
+        // Debug.Log($"Novo estado: {newState.GetType().Name}");
     }
 }

@@ -16,5 +16,4 @@ public enum TamagochiNeedsEnum {
     Hunger,
     Thirst,
     Sleep,
-    Lack,
 }
